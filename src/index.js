@@ -168,7 +168,7 @@ class Database {
       whereStatement = ' WHERE ';
       for (let index = 0; index < this.whereArray.length; index++) {
         let parts =  this.whereArray[index] ;
-        whereStatement +=  parts[0] + ' ' + parts[1] + ' "' + parts[2] + '" '; 
+        whereStatement +=  parts[0] + ' ' + parts[1] + " '" + parts[2] + "' "; 
         if(index != this.whereArray.length - 1 ) {
           whereStatement = whereStatement + ' AND ';
         }
@@ -248,7 +248,7 @@ class Database {
     if(this.orWhereArray.length != 0 ) {
       for (let index = 0; index < this.orWhereArray.length; index++) {
         let parts =  this.orWhereArray[index] ;
-        whereStatement +=  ' OR ' + parts[0] + ' ' + parts[1] + ' "' + parts[2] + '" '; 
+        whereStatement +=  ' OR ' + parts[0] + ' ' + parts[1] + " '" + parts[2] + "' ";
       }
     }
 
@@ -324,7 +324,7 @@ class Database {
   getHavingStatement = () => {
     let havingStatement = '';
     if(this.havingArray.length != 0) {
-      havingStatement += ' HAVING ' +  this.havingArray[0] + ' ' + this.havingArray[1] + ' "' + this.havingArray[2] + '" ';
+      havingStatement += ' HAVING ' +  this.havingArray[0] + ' ' + this.havingArray[1] + " '" + this.havingArray[2] + "' ";
     }
     return havingStatement;
   }
