@@ -1,5 +1,5 @@
 //This is the only dependency for this module.
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 /**
  * @class Database

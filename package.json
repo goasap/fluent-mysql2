@@ -1,10 +1,10 @@
 {
-  "name": "@goasap/fluent-mysql",
+  "name": "@goasap/fluent-mysql2",
   "version": "1.2.2",
-  "description": "MySQL query builder to perform database operations",
+  "description": "MySQL2 query builder to perform database operations",
   "main": "./lib/index.js",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goasap/fluent-mysql.git"
+    "url": "git+https://github.com/goasap/fluent-mysql2.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@goasap"
